@@ -1,4 +1,8 @@
+import java.util.ArrayList;
 import java.util.Random;
+
+import model.Investor;
+import patters.InvestorBuilder;
 
 
 
@@ -32,7 +36,18 @@ public class StockMain {
 	        }
 	        return companys;
 	    }
-	
+	// creating 100 investors
+	    public static ArrayList<Investor> createInvestors(Random rand) {
+	        ArrayList<Investor> investors = new ArrayList<Investor>();
+	        
+	        for(int i = 0; i < 100; i++) {
+	            // Building the Investtors using the Builder pattern
+	            Investor investor = new InvestorBuilder(getNextId(rand)).setName("Investor Jhon " + String.valueOf(i)).setBudget(getRandomBudget(rand)).build();
+	            investors.add(investor);
+	            System.out.println("Investor Created -->" +investor.getName());
+	        }
+	        return investors;
+	    }
 	
 	
 
