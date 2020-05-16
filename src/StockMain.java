@@ -1,15 +1,14 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+import model.Company;
 import model.Investor;
+import patters.CompanyBuilder;
 import patters.InvestorBuilder;
 
 
-
 public class StockMain {
-	
-	
-	
+
 	
 	 public static void main(String []args){
 	        // create instance of Random class 
