@@ -4,8 +4,8 @@ import java.util.Observer;
 
 import model.Company;
 import model.Investor;
-//import patters.CompanyIterator;
-//import patters.InvestorIterator;
+import patters.CompanyIterator;
+import patters.InvestorIterator;
 import patters.Observable;
 
 public class StockMarket implements Observable {
@@ -192,11 +192,11 @@ public class StockMarket implements Observable {
 	    
 	    // CREATING THE ITERATOR FOR COMPANY AND INVESTOR
 	    // USING ITERATOR PATTERN
-	  //  public Iterator<Company> createIteratorCompanys(ArrayList<Company> comp) {
-	//        return new CompanyIterator(comp);
+	    public Iterator<Company> createIteratorCompanys(ArrayList<Company> comp) {
+	        return new CompanyIterator(comp);
 	    }
 	    
-	 //   public Iterator<Investor> createIteratorInvestors(ArrayList<Investor> inv) {
-	 //       return new InvestorIterator(inv);
+	    public Iterator<Investor> createIteratorInvestors(ArrayList<Investor> inv) {
+	       return new InvestorIterator(inv);
 	    }
 	}

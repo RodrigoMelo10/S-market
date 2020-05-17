@@ -23,7 +23,7 @@ public class StockMain {
 	        
 	        
 	        stockMarket.getResultOfSimulation();
-	
+	 }
 	  public static ArrayList<Company> createCompanys(Random rand) {
 	        ArrayList<Company> companys = new ArrayList<Company>();
 	        
@@ -47,7 +47,31 @@ public class StockMain {
 	        }
 	        return investors;
 	    }
-	
+	    // return the next Random Long
+	    public static Long getNextId(Random rand) {
+	        return rand.nextLong();
+	    }
+	    
+	    public static Integer getRandomBudget(Random rand) {
+	        // return the next Random Integer Between 1000 and 10000 using this formula
+	       // minValue + rn.nextInt(maxValue - minValue + 1)
+	        return 1000 + rand.nextInt(10000 - 1000 + 1); 
+	    }
+	    
+	    public static Integer getRandomShares(Random rand) {
+	        // return the next Random Integer (between 500 and 1000) using this formula
+	       // minValue + rn.nextInt(maxValue - minValue + 1)
+	        return 500 + rand.nextInt(1000 - 500 + 1); 
+	    }
+	    
+	    public static Integer getRandomSharePrice(Random rand) {
+	        // return the next Random Integer (between 10 and 100) using this formula
+	       // minValue + rn.nextInt(maxValue - minValue + 1)
+	        return 10 + rand.nextInt(100 - 10 + 1); 
+	    }
+	    
+	}
+
 	
 
-}
+
