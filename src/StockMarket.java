@@ -197,6 +197,6 @@ public class StockMarket implements Observable {
 	    }
 	    
 	    public Iterator<Investor> createIteratorInvestors(ArrayList<Investor> inv) {
-	       return new InvestorIterator(inv);
+	        return new InvestorIterator(inv);
 	    }
 	}
