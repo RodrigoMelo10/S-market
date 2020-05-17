@@ -1,5 +1,5 @@
 //https://github.com/RodrigoMelo10/S-market
-
+//Creating class Company
 package model;
 
 import patters.Observer;
@@ -17,7 +17,7 @@ public class Company implements Observer{
     public Company(long id) {
         this.id = id;
     }
-// passing attributes
+// passing  the attributes of company as parameters
     public Company(long id, String name, Integer shares, Integer sharePrice, boolean outOfShares) {
         super();
         this.id = id;
@@ -25,7 +25,7 @@ public class Company implements Observer{
         this.shares = shares;
         this.sharePrice = sharePrice;
         this.outOfShares = outOfShares;
-    }
+    }// returning outOfShares
     public boolean isOutOfShares() {
         return outOfShares;
     }
@@ -37,35 +37,35 @@ public class Company implements Observer{
     public long getId() {
         return id;
     }
-
+//setting id
     public void setId(long id) {
         this.id = id;
     }
-
+//getting name
     public String getName() {
         return name;
     }
-
+//setting name
     public void setName(String name) {
         this.name = name;
     }
-
+//getting Shares
     public Integer getShares() {
         return shares;
     }
-
+//setting shares
     public void setShares(Integer shares) {
         this.shares = shares;
     }
-
+//getting SharePrice
     public Integer getSharePrice() {
         return sharePrice;
     }
-
+//setting SharePrice
     public void setSharePrice(Integer sharePrice) {
         this.sharePrice = sharePrice;
     }
-
+//getting Capital
     public Integer getCapital() {
         return capital;
     }
@@ -73,19 +73,19 @@ public class Company implements Observer{
     public Integer getCapitalCalculated() {
         return shares * sharePrice;
     }
-
+//setting Capital
     public void setCapital(Integer capital) {
         this.capital = capital;
     }
-
+//setting outofshares
     public void setOutOfShares(boolean outOfShares) {
         this.outOfShares = outOfShares;
     }
-
+//getting SharedSelleds
     public Integer getSharedSelleds() {
         return sharedSelleds;
     }
-
+//setting sharedSelleds
     public void setSharedSelleds(Integer sharedSelleds) {
         this.sharedSelleds = sharedSelleds;
     }

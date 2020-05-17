@@ -14,7 +14,7 @@ public class Investor implements Observer{
     public Investor(long id) {
         this.id = id;
     }
-// passing parameters
+// passing attributes as parameters
     public Investor(long id, String name, Integer budget, boolean broke, Integer shares) {
         super();
         this.id = id;
@@ -23,15 +23,15 @@ public class Investor implements Observer{
         this.broke = broke;
         this.shares = shares;
     }
-
+//returning id
     public long getId() {
         return id;
     }
-
+//setting id
     public void setId(long id) {
         this.id = id;
     }
-
+//getting Name
     public String getName() {
         return name;
     }
@@ -39,27 +39,27 @@ public class Investor implements Observer{
     public void setName(String name) {
         this.name = name;
     }
-
+//returning budget
     public Integer getBudget() {
         return budget;
     }
-
+//setting Budget
     public void setBudget(Integer budget) {
         this.budget = budget;
     }
-
+//returning broke
     public boolean isBroke() {
         return broke;
     }
-
+//setting Broke
     public void setBroke(boolean broke) {
         this.broke = broke;
     }
-
+//returnin shares
     public Integer getShares() {
         return shares;
     }
-
+//setting Shares
     public void setShares(Integer shares) {
         this.shares = shares;
     }
